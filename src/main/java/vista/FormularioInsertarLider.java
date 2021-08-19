@@ -7,7 +7,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import controlador.ControladorRequerimientos;
 
-import modelo.dao.Requerimiento_3Dao;
 import modelo.vo.Requerimiento_3Vo;
 
 import java.awt.event.*;

@@ -44,11 +44,6 @@ public class GUI extends JFrame implements ActionListener{
 
     }
 
-    public static void main(String[] args) {
-        GUI ventana = new GUI();
-        ventana.setVisible(true);
-    }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == BotonInforme1) {            
@@ -61,7 +56,6 @@ public class GUI extends JFrame implements ActionListener{
         }
 
         if (e.getSource() == BotonInsertarLider) {
-            //VistaRequerimientos.requerimiento3();
             FormularioInsertarLider ventana3 = new FormularioInsertarLider();
             ventana3.setVisible(true);
         }

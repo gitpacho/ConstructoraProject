@@ -10,6 +10,7 @@ import modelo.vo.Requerimiento_2Vo;
 import modelo.dao.Requerimiento_1Dao;
 import modelo.dao.Requerimiento_2Dao;
 import modelo.dao.Requerimiento_3Dao;
+import vista.*;
 
 public class VistaRequerimientos {
     public static Requerimiento_1Dao dao = new Requerimiento_1Dao();

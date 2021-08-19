@@ -6,9 +6,9 @@ import java.awt.Dimension;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-public class FormularioTable2 extends JFrame {
+public class FormularioConsultarMateriales extends JFrame {
 
-    public FormularioTable2(Object[][] datos) {
+    public FormularioConsultarMateriales(Object[][] datos) {
         String[] columnNames = { "ID_Proyecto", "Nombre_Material", "Importado" };
         DefaultTableModel dtm = new DefaultTableModel(datos, columnNames);
         final JTable table = new JTable(dtm);
