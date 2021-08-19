@@ -1,33 +1,25 @@
 package vista;
 
-import javax.swing.JFrame;
-import javax.swing.JLabel;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 
-public class FormularioConsultarLideres extends JFrame{
-    private JLabel labelMateriales, labelResultados, labelInfo, labelInfo2;
-    public FormularioConsultarLideres() {
-        setLayout(null);
-        setDefaultCloseOperation(3);
+public class FormularioTable extends JFrame {
 
-        setBounds(20,20, 330, 300);
-        setTitle("Consultas");
-        setResizable(false);
+    public FormularioTable(Object[][] datos) {
+        String[] columnNames = { "ID_Lider" , "Salario" , "Ciudad_Residencia" };
+        //Object[][] datos = { { "Juan", 25, false }, { "Sonia", 33, true }, { "Pedro", 42, false }, };
+        DefaultTableModel dtm = new DefaultTableModel(datos, columnNames);
+        final JTable table = new JTable(dtm);
+        table.setPreferredScrollableViewportSize(new Dimension(250, 100));
+        JScrollPane scrollPane = new JScrollPane(table);
+        getContentPane().add(scrollPane, BorderLayout.CENTER);
+        setTitle("Consulta Lideres");
+        setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        setBounds(840, 215, 500, 300);
+        pack();
 
-
-        labelMateriales = new JLabel("LIDERES");
-        labelResultados = new JLabel("RESULTADOS");
-        labelInfo =  new JLabel("La visualización está condicionada a la ciudad");
-        labelInfo2 = new JLabel("de Baranquilla. El salario es superior al minimo");
-
-        labelMateriales.setBounds(120, 10, 300, 50);
-        labelResultados.setBounds(20, 110, 300, 50);
-        labelInfo.setBounds(20, 210, 300, 15);
-        labelInfo2.setBounds(20, 225, 300, 15);
-
-        add(labelMateriales);
-        add(labelResultados);
-        add(labelInfo);
-        add(labelInfo2);
     }
-    
 }
+

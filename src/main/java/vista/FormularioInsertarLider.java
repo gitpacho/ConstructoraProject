@@ -149,9 +149,6 @@ public class FormularioInsertarLider extends JFrame implements ActionListener{
             } catch (SQLException e2) {
                 System.out.println("Error en formulario insertar datos");
             }
-    
-
-
 
         }
         

@@ -37,7 +37,7 @@ public class VistaRequerimientos {
                 System.out.println(requerimiento_1Vo.getID_Lider() + "\t\t"+ requerimiento_1Vo.getSalario() + "\t" +requerimiento_1Vo.getCiudad_Residencia());
             }
 
-            FormularioTable ventana = new FormularioTable(dataTable);
+            FormularioConsultarLideres ventana = new FormularioConsultarLideres(dataTable);
             ventana.setVisible(true);
 
             
@@ -69,7 +69,7 @@ public class VistaRequerimientos {
             }
             
 
-            FormularioTable2 ventana = new FormularioTable2(dataTable);
+            FormularioConsultarMateriales ventana = new FormularioConsultarMateriales(dataTable);
             ventana.setVisible(true);
 
         } catch (Exception e) {
